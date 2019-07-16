@@ -23,10 +23,6 @@ module.exports = {
         }
       },
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
-      },
-      {
         test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
         use: {
           loader: "url-loader",
@@ -41,9 +37,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      components: path.resolve(__dirname, "src/components/"),
-      containers: path.resolve(__dirname, "src/containers/"),
-      assets: path.resolve(__dirname, "src/assets/")
+      "@": path.resolve(__dirname, "src/")
     },
     extensions: [".js", ".jsx", ".scss"]
   },

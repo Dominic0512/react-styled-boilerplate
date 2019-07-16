@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { Home } from "containers/Home";
+import Home from "@/containers/Home";
 
 import { Normalize } from "styled-normalize";
 import AppStyle from "./AppStyle";
